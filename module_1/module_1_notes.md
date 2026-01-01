@@ -81,4 +81,31 @@ A: Function.
 - `return 0;` in main returns 0 to the calling process (which is typically the operating system).
 - For most operating systems, a return value of 0 signifies that the program is terminating normally.
 ### Handling Syntax Errors
+- When you receive syntax error messages, be prepared to look at the last few lines of code in your program in order to find the error.
+### Ask the Expert
+- Warnings point out suspicious but technically correct code.
+### Progress Check
+1. Where does a C++ program begin execution?
+A: The `main` function.
+2. What is `cout`?
+`cout` is a predefined identifier which refers to "console output" which typically refers to the monitor.
+3. What does `#include <iostream>` do?
+This directive includes the C++ I/O standard library into our program.
+## Critical Skill 1.5: A Second Simple Program
+- A variable is a named memory location that can be assigned a value.
+- In C++, all variables must be declared before they are used.
+- `<<` refers to stream insertion operator.
+## Critical Skill 1.6: Using an Operator
+### Progress Check
+1. Must a variable be declared before it is used?
+A: Yes
+2. Show how to assign the variable min the value 0.
+A:
+```c
+int min;
+min = 0;
+```
+3. Can more than one variable be declared in a single declaration statement?
+A: Yes
+## Critical Skill 1.7: Reading Input from the Keyboard
 - 
