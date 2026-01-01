@@ -94,7 +94,7 @@ This directive includes the C++ I/O standard library into our program.
 ## Critical Skill 1.5: A Second Simple Program
 - A variable is a named memory location that can be assigned a value.
 - In C++, all variables must be declared before they are used.
-- `<<` refers to stream insertion operator.
+- `<<` refers to stream insertion operator or the C++ output operator.
 ## Critical Skill 1.6: Using an Operator
 ### Progress Check
 1. Must a variable be declared before it is used?
@@ -108,4 +108,22 @@ min = 0;
 3. Can more than one variable be declared in a single declaration statement?
 A: Yes
 ## Critical Skill 1.7: Reading Input from the Keyboard
-- 
+- `>>` is the C++ input operator.
+- `cin` is another predefined identifier. It stands for console input.
+- For `cin` if the user enters in a non-integer response for an integer variable the value will default to 0.
+### Some Output Options
+- In general, you can chain together as many output operations as you like within one output statement.
+- In C++, the carriage return-linefeed sequence is generated using the newline character.
+### Progress Check
+1. What is C++'s input operator?
+A: `>>`
+2. To what device is `cin` linked by default?
+A: The keyboard
+3. What does `\n` stand for?
+A: The newline character
+### Another Data Type
+### Ask the Expert
+- C++ supplies different data types so that you can write efficient programs.
+  - For example, integer arithmetic is faster than floating-point calculations.
+### Project 1-1
+- [ ] Project 1-1 Converting Feet to Meters
