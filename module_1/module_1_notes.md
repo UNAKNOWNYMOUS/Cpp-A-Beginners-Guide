@@ -34,7 +34,7 @@ A: C
 A: The complexity of programs grew?
 3. C++ is the parent of Java and C#. True or False?
 A: True
-## Critical Skill 1.3 Object-Oriented Programming
+## Critical Skill 1.3: Object-Oriented Programming
 - Central to C++ is object-oriented programming (OOP).
   - OOP was the impetus for the creation of C++.
 - All OOP languages have three traits in common: encapsulation, polymorphism, and inheritance.
@@ -126,4 +126,85 @@ A: The newline character
 - C++ supplies different data types so that you can write efficient programs.
   - For example, integer arithmetic is faster than floating-point calculations.
 ### Project 1-1
-- [ ] Project 1-1 Converting Feet to Meters
+- [x] Project 1-1 Converting Feet to Meters
+### Progress Check
+1. What is C++'s keyword for the integer data type?
+A: `int`
+2. What is double?
+A: A `double` is a type in C++ that stores double precision numbers.
+3. How do you output a newline?
+```c
+cout << '\n';
+```
+## Critical Skill 1.8: Two Control Statements
+- Inside a function, execution proceeds from one statement to the next, top to bottom.
+### The if Statement
+- IF statement's simplest form:
+```c
+if(condition) statement;
+```
+  - where condition is an expression that is evaluated to be either true or false.
+    - In C++, true is nonzero and false is zero.
+### The for Loop
+- You can repeatedly execute a sequence of code by creating a loop.
+- The simplest form of the for loop is:
+```c
+for (initialization; condition; increment) statement;
+```
+- Initialization sets a loop control variable to an initial value.
+- Condition is an expression that is tested each time the loop repeats.
+- The increment is an expression that determines how the loop control variable is incremented each time the loop repeats.
+- In C++ we wont used `count=count+1` because there is a special increment operator that performs this operation more efficiently: The increment operator `++`.
+### Progress Check
+1. What does the `if` statement do?
+A: The `if` statement provides control over the program's execution.
+2. What does the `for` statement do?
+A: The `for` loop provides a way to repeatedly executing code.
+3. What are C++'s relational operators?
+A: Relational operators in C++ are used to give a truth value of true or false.
+## Critical Skill 1.9: Using Blocks of Code
+- A code black is a grouping of two or more statements.
+- Once a block of code has been created, it becomes a logical unit that can be used any place that a single statement can.
+- The main reason for blocks of code is to create logically inseparable units of code.
+### Ask the Expert
+Q: Does the use of a code block introduce any runtime inefficiencies? In other words, do the { and } consume any extra time during the execution of my program?
+A: No, Code blocks do not add any overhead whatsoever. In fact, because of their ability to simplify the coding of certain algorithms, their use generally increases speed and efficiency.
+### Semicolons and Positioning
+- In C++, the semicolon signals the end of a statement.
+  - That is, each individual statement must end with a semicolon.
+- Breaking long lines is often used to make programs more readable. It can also prevent excessively long lines from wrapping.
+### Indentation Practices
+### Project 1-2
+- [x] Project 1-2 Generating a Table of Feet to Meter Conversions
+## Critical Skill 1.10: Introducing Functions
+- A C++ program is constructed from building blocks called functions.
+- A Function is a subroutine that contains one or more C++ statements
+- Each function has a name, and this name is used to call the function.
+- To call a function, simply specify its name in the source code of your program, followed by parentheses.
+- When a function is called, program control is transferred to that function, and the code contained within the function is executed.
+- When the function's code ends, control is transferred back to the caller.
+- Argument list will refer to comma-separated arguments.
+- An argument is a value passed into a function.
+- A return value is data that is passed back to the calling code.
+- Whenever you use a built-in function, you must include its header.
+### The C++ Libraries
+### Progress Check
+1. What is a function?
+A: A function is a subroutine that contains one or more C++ statements.
+2. A function is called by using its name. True of false?
+A: True.
+3. What is the C++ standard function library?
+A: The C++ standard function library is a collection of functions supplied by all C++ compilers.
+## Critical Skill 1.11: The C++ Keywords
+- There are 63 keywords defined for Standard C++.
+- C++ is a case-sensitive language, and it requires that all keywords be in lowercase.
+## Critical Skill 1.12: Identifiers
+- In C++, an identifier is a name assigned to a function, variable, or any other user-defined item.
+- You cannot use any of the C++ keywords as identifier names.
+### Progress Check
+1. Which is the keyword, for, For, or FOR?
+A: for
+2. A C++ identifier can contain what type of characters?
+A: underscore, digits, letters.
+3. Are index21 and Index21 the same identifier?
+A: No.
