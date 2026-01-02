@@ -208,3 +208,50 @@ A: for
 A: underscore, digits, letters.
 3. Are index21 and Index21 the same identifier?
 A: No.
+## Module 1 Mastery Check
+1. It has been said that C++ sits at the center of the modern programming universe. Explain this statement.
+A: C++ sits at the core from inheriting from one of the most influential programming languages C and including modern concepts for programming which is OOP.
+2. A C++ compiler produces object code that is directly executed by the computer. True or false?
+A: True
+3. What are the tree main principles of object-oriented programming?
+A: P(olymoprhism) I(nheritance) E(ncapsulation).
+4. Where do C++ program begin execution?
+A: The `main` function.
+5. What is a header?
+A: A header is a directive used to import useful pre-existing C++ code.
+Alt A: A header contains information used by the program.
+6. What is `<iostream>`? What does the following code do: `#include <iostream>`?
+A: `<iostream>` is from the standard C++ library code used for input and output. And the following code imports the library using the `#include` directive.
+7. What is a namespace?
+A: A namespace is a declarative region where code exists.
+Alt A: A namespace is a declarative region in which various program elements can be placed. Elements declared in one namespace are separate from elements declared in another.
+8. What is a variable?
+A: A variable is named memory location to store data.
+9. Which of the following variable names is/are invalid?
+  a. count
+  b. _count
+  c. count27
+  d. 67count
+  e. if
+A: (d) and (e) are invalid.
+10. How do you create single-line comment? How do you create a multiline comment?
+A: `//` for single-line comments and `/**/` for multi-line comments.
+11. Show the general form of the if statement. Show the general form of the for loop.
+A:
+```c
+if (condition) {
+  statements;
+}
+```
+```c
+for (initialization; condition; increment) {
+  statements;
+}
+```
+12. How do you create a block of code?
+A: Using `{}`.
+13. See .cpp
+14. See .cpp
+15. When a function is called, what happens to program control?
+A: The program control goes to the called function and when that is finished executing the program control flow goes back to the caller.
+16. See .cpp
