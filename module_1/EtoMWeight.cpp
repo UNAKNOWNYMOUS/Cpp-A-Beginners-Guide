@@ -10,7 +10,8 @@ int main() {
   float earthWeight;
 
   for (earthWeight = 1; earthWeight < 100; earthWeight++) {
-    cout << "Earth weight " << earthWeight << " is " << earthWeight * 0.83
+    cout << "Earth: " << earthWeight
+         << " pounds == Moon: " << earthWeight * 0.17 << " pounds"
          << "\n";
 
     if (counter == 25) {

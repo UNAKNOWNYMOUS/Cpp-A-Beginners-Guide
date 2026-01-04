@@ -222,6 +222,7 @@ A: A header is a directive used to import useful pre-existing C++ code.
 Alt A: A header contains information used by the program.
 6. What is `<iostream>`? What does the following code do: `#include <iostream>`?
 A: `<iostream>` is from the standard C++ library code used for input and output. And the following code imports the library using the `#include` directive.
+Alt A: `<iostream>` is the header that supports I/O. The statement includes the `<iostream>` header in a program.
 7. What is a namespace?
 A: A namespace is a declarative region where code exists.
 Alt A: A namespace is a declarative region in which various program elements can be placed. Elements declared in one namespace are separate from elements declared in another.
@@ -251,7 +252,7 @@ for (initialization; condition; increment) {
 12. How do you create a block of code?
 A: Using `{}`.
 13. See EtoMWeight.cpp
-14. See .cpp
+14. See JtoEYears.cpp
 15. When a function is called, what happens to program control?
 A: The program control goes to the called function and when that is finished executing the program control flow goes back to the caller.
-16. See .cpp
+16. See abs5.cpp -- Whoops I misread it. Need TODO
