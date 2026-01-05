@@ -112,4 +112,113 @@ int a, b = 8, c = 19, d; // b and c have initializations
   - That is, the outcome of a relational or logical expression is either true or false.
 - Both relational and logical operators are lower in precedence than the arithmetic operators.
 #### Project 2-2
-- [ ] Project 2-2 Construct an XOR Logical Operation
+- [x] Project 2-2 Construct an XOR Logical Operation
+#### Progress Check
+1. What does the % operator do? To what types can it be applied?
+- A: The `%` operator is called the modulus operator and it gives the remainder of a division. This operator can only be applied to integer types.
+2. How do you declare an int variable called index with an initial value of 10?
+- A:
+```c
+int index = 10;
+```
+3. Of what type is the outcome of a relational or logical expression?
+- A: It is of type `bool`.
+## Critical Skill 2.6: The Assignment Operator
+- The assignment operator has the general form:
+```c
+var = expression
+```
+- The assignment operator allows you to create a chain of assignments:
+```c
+int x, y, z;
+x = y = z = 100; // sets x, y, and z to 100
+```
+- This works because the `=` is an operator that yields the value of the right-hand expression.
+## Critical Skill 2.7: Compound Assignments
+- There are compound assignment operators for most of the binary operators (that is, those that require two operands).
+```cpp
+// Thus, statements of the form
+var = var op expression;
+// can be converted into this compound form:
+var op= expression
+```
+- Compound assignment operators are also sometimes called the shorthand assignment operators.
+- The compound assignment operator provides two benefits:
+  - They are more compact.
+  - The can result in more efficient executable code (because the operand is evaluated only once).
+## Critical Skill 2.8: Type conversion in Assignments
+- When variables of one type are mixed with variables of another type, a type conversion will occur.
+- When converting from integers to characters and long integers to integers, the appropriate number of high-order bits will be removed.
+- When converting from a floating-point type to an integer, the fractional part will be lost.
+- If the target type is not large enough to store the result, then garbage value will result.
+- Although C++ automatically converts any built-in type into another, the results won't always be what you want.
+  - Be careful when mixing types in an expression.
+### Expressions
+- Operators, variables, and literals are constituents of expressions.
+## Critical Skill 2.9: Type Conversion in Expressions
+- When constants and variables of different types are mixed in an expression, they are converted to the same type.
+- First, all char and short int values are automatically elevated to int.
+  - This process is called integral promotion.
+- Next, all operands are converted "up" to the type of the largest operand, which is called type promotion.
+### Converting to and from bool
+- Values of type `bool` are automatically converted into the integers 0 or 1 when used in an integer expression.
+- When an integer result is converted to type `bool`, 0 becomes false and nonzero becomes true.
+## Critical Skill 2.10: Casts
+- It is possible to force an expression to be of a specific type by using a construct called cast.
+- A cast is an explicit type conversion.
+- C++ defines five types of casts.
+- The general form of this cast is:
+```cpp
+(type) expression
+```
+- Casts are considered operators.
+- As an operator, a cast is unary and has the same precedence as any other unary operator.
+## Critical Skill 2.11: Spacing and Parentheses
+#### Project 2-3
+- [x] Project 2-3 Compute the Regular Payments on a Loan
+## Module 2 Mastery Check
+1. What type of integers are supported by C++?
+- A: int, short int, long int, unsigned int, unsigned short int, unsigned long int, signed int, signed short int, signed long int.
+2. By default, what type is 12.2?
+- A: double
+3. What values can a bool variable have?
+- A: true or false
+4. What is the long integer data type?
+- A:
+```cpp
+long int;
+/* or */
+long;
+```
+5. What escape sequence produces a tab? What escape sequence rings the bell?
+- A: `\t` and `\b`.
+6. A string is surrounded by double quotes. True or false?
+- A: True
+7. What are the hexadecimal digits?
+- A: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+8. Show the general form for initializing a variable when it is declared.
+- A:
+```cpp
+type var = val;
+```
+9. What does the % do? Can it be used on floating-point values?
+- A: The `%` modulus operator gets the remainder of integer division. No it cannot be used on floating-point values.
+10. Explain the difference between the prefix and postfix forms of the increment operator.
+- A: The prefix increment operator will take the value of operand and increment it first and then use its value in an expression. The postfix increment operator will use the value of the operand first and then increment its value.
+11. Which of the following are logical operators in C++?
+  a. &&
+  b. ##
+  c. ||
+  d. $$
+  e. !
+- A: a, c, and e.
+12. How can `x = x + 12;` be rewritten?
+- A:
+```cpp
+x += 12;
+```
+13. What is a cast?
+- A: A cast is when you force an expression to be of a different type.
+- Alt A: A cast is an explicit type conversion.
+14. Write a program that finds all of the prime numbers between 1 and 100.
+- A: See find1to100Prime.cpp
